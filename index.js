@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors()); 
 app.use(cors()); 
+app. use (cors());
 
 app.get("/operation", (req, res) => {
     res.json({ operation_code: "OP12345" });
